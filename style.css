@@ -1,0 +1,25 @@
+.main_line
+{
+	
+	text-align: center;
+	background-color: #00FF7F
+}
+.page-header{
+	height: 100px;
+}
+.cat {
+	width: 50px;
+}
+
+.box {
+	width: 50px;
+}
+.flower {
+	width: 50px;
+}
+.mouse {
+	height: 70px;
+}
+.jump {
+	margin-bottom: 60px;
+}
