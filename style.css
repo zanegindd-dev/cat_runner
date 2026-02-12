@@ -2,24 +2,35 @@
 {
 	
 	text-align: center;
-	background-color: #00FF7F
+	background-color: #00FF7F;
+	position: relative;
+	height: 100px;
 }
 .page-header{
 	height: 100px;
+	display: flex;
+  	justify-content: center;
 }
+
+.count-wrapper {
+	display: flex;
+  	justify-content: flex-end;
+}
+
 .cat {
-	width: 50px;
+	position: absolute;
+	width: 75px;
+	bottom: 0;
+	left: 50px;
 }
 
 .box {
+	position: absolute;
+	bottom: 0;
 	width: 50px;
 }
-.flower {
-	width: 50px;
-}
-.mouse {
-	height: 70px;
-}
-.jump {
-	margin-bottom: 60px;
+
+.gameover {
+  	display: none;
+	font-size: 80px; 
 }
