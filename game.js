@@ -130,9 +130,8 @@ let boxes = [];
 let images = ["img/box.png", "img/mouse.png", "img/flower.png", "img/boot.png"];
 
 let startGame = true;
-document.addEventListener('keydown', function(event) {
-  if (event.code === 'Space') {
-    console.log('Пробел нажат');
+function handleAction(event) {
+  if (event.type === 'click' || (event.type === 'keydown' && event.code === 'Space')) {
     cat.startJump(); 
     
     if(startGame){
@@ -148,7 +147,11 @@ document.addEventListener('keydown', function(event) {
     
     requestAnimationFrame(animation);	
   }
-});
+};
+
+
+document.addEventListener('keydown', handleAction);
+document.addEventListener('click', handleAction);
 
 let speed = 0.2;
 let lastTime;
